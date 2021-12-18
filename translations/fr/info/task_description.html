@@ -1,0 +1,51 @@
+<!-- Describe task in general -->
+
+<p>
+    Vous donnez une chaîne et vous devez en trouver le premier mot.
+</p>
+
+<p>
+    Il est une version plus simple de la mission <a href="/mission/first-word/">Premier Mot</a>, qui peut être complétée plus tard.
+</p>
+<ul>
+    <li>La chaîne d'entrée se compose uniquement de lettres et d'espaces anglais.</li>
+    <li>Il n'y a pas d'espaces au début et à la fin de la chaîne.</li>
+</ul>
+
+<!-- Explain input and output values -->
+<p>
+    <strong>En entrée: </strong> Une chaîne.
+</p>
+
+<p>
+    <strong>En sortie: </strong> Une chaîne. 
+</p>
+
+
+<!-- Put some usage examples -->
+<div class="for_info_only">
+    <p>
+        <strong>Example:</strong>
+    </p>
+
+{% if interpreter.slug == "js-node" %}
+<pre class="brush: javascript">firstWord("Hello world") == "Hello"
+</pre>
+{% else %}
+<pre class="brush: python">first_word("Hello world") == "Hello"
+</pre>
+{% endif %}
+</div>
+<!-- Here you can explain how it can be used in development. -->
+<!-- The section is optional -->
+<p class="for_info_only">
+    <strong>Comment il est utilisé: </strong>
+    <i>Le premier mot est une commande dans une ligne de commande.</i>
+</p>
+
+<!-- Here you can explain some constraints for input-->
+<!-- The section is optional -->
+<p>
+    <strong>Condition préalable:</strong>
+    <i>Le texte peut contenir a-z, A-Z et des espaces.</i>
+</p>
