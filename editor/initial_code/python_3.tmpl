@@ -1,0 +1,26 @@
+{% comment %}New initial code template{% endcomment %}
+{% block env %}{% endblock env %}
+
+{% block start %}
+def first_word(text: str) -> str:
+    """
+        returns the first word in a given text.
+    """
+    # your code here
+    return text[0:2]
+{% endblock start %}
+
+{% block example %}
+print('Example:')
+print(first_word("Hello world"))
+{% endblock %}
+
+{% block tests %}
+{% for t in tests %}
+assert {% block call %}first_word({{t.input|p_args}})
+{% endblock %} == {% block result %}{{t.answer|p}}{% endblock %}{% endfor %}
+{% endblock %}
+
+{% block final %}
+print("The mission is done! Click 'Check Solution' to earn rewards!")
+{% endblock final %}

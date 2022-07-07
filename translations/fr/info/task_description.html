@@ -28,13 +28,7 @@
         <strong>Example:</strong>
     </p>
 
-{% if interpreter.slug == "js-node" %}
-<pre class="brush: javascript">firstWord("Hello world") == "Hello"
-</pre>
-{% else %}
-<pre class="brush: python">first_word("Hello world") == "Hello"
-</pre>
-{% endif %}
+<pre class="brush: {% if is_js %}javascript{% else %}python{% endif %}">{{init_code_tmpl}}</pre>
 </div>
 <!-- Here you can explain how it can be used in development. -->
 <!-- The section is optional -->

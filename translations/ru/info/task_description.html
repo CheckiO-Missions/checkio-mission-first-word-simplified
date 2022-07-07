@@ -1,5 +1,5 @@
 <p>
-    Дана строка и&nbsp;нужно найти ее&nbsp;первое слово.
+    Дана строка и нужно найти ее первое слово.
 </p>
 
 <p>
@@ -7,16 +7,16 @@
 </p>
 
 <ul>
-    <li>Строка состоит только из&nbsp;английских символов и&nbsp;пробелов.</li>
-    <li>В&nbsp;начале и&nbsp;в&nbsp;конце строки пробелов нет.</li>
+    <li>Строка состоит только из английских символов и пробелов.</li>
+    <li>В начале и в конце строки пробелов нет.</li>
 </ul>
 
 <p>
-    <strong>Входные данные: </strong> строка.
+    <strong>Входные данные: </strong> строка (str).
 </p>
 
 <p>
-    <strong>Выходные данные: </strong> строка. 
+    <strong>Выходные данные: </strong> строка (str). 
 </p>
 
 <div class="for_info_only">
@@ -24,21 +24,15 @@
         <strong>Пример:</strong>
     </p>
 
-{% if interpreter.slug == "js-node" %}
-<pre class="brush: javascript">firstWord("Hello world") == "Hello"
-</pre>
-{% else %}
-<pre class="brush: python">first_word("Hello world") == "Hello"
-</pre>
-{% endif %}
+<pre class="brush: {% if is_js %}javascript{% else %}python{% endif %}">{{init_code_tmpl}}</pre>
 </div>
 
 <p class="for_info_only">
     <strong>Как это используется: </strong>
-    <i>Первое слово&nbsp;&mdash; это команда в&nbsp;командной строке.</i>
+    <i>Первое слово &mdash; это команда в командной строке.</i>
 </p>
 
 <p>
     <strong>Предусловия:</strong>
-    <i>Текст может содержать буквы a-z, A-Z и&nbsp;пробелы.</i>
+    <i>Текст может содержать буквы a-z, A-Z и пробелы.</i>
 </p>

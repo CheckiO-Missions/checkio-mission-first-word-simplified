@@ -11,26 +11,26 @@ Each test is a dict with
 TESTS = {
     "Basics": [
         {
-            "input": "Hello world",
+            "input": ["Hello world"],
             "answer": "Hello"
         },
         {
-            "input": "a word",
+            "input": ["a word"],
             "answer": "a"
         },
         {
-            "input": "greeting from CheckiO Planet",
+            "input": ["greeting from CheckiO Planet"],
             "answer": "greeting"
         },
         {
-            "input": "hi",
+            "input": ["hi"],
             "answer": "hi",
             "explanation": "text consists of only one word"
         }
     ],
     "Extra": [
         {
-            "input": "Holy Edison",
+            "input": ["Holy Edison"],
             "answer": "Holy"
         }
     ]
