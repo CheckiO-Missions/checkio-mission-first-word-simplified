@@ -12,7 +12,7 @@
         OK. Maybe you can give me some doc links?
     </div>
     <div class="answer">
-        Sure, if you need to split a string, you should do <b>str.split</b>. <a href="https://docs.python.org/3.8/library/stdtypes.html#str.split">Read more about it in docs</a>.
+        Sure, if you need to split a string, you should do <b>str.split()</b>. <a href="https://docs.python.org/3.8/library/stdtypes.html#str.split">Read more about it in docs</a>.
     </div>
 </div>
 <div class="question-answer">
@@ -21,17 +21,10 @@
     </div>
     <div class="answer">
         Well, actually, by calling this function. Check this out:
-
         <pre class="brush: python">
 text = "greeting from CheckiO Planet"
 words = text.split()
-print(words)
-        </pre>
-
-       The output for this piece of code will be: 
-
-        <pre class="brush: python">
-['greeting', 'from', 'CheckiO', 'Planet']
+print(words) # output ['greeting', 'from', 'CheckiO', 'Planet']
         </pre>
     </div>
 </div>
@@ -42,7 +35,7 @@ print(words)
     <div class="answer">
         So, the result of the <b>split</b> function is a list of words. In order to get the first one, you need to use index 0.
         <pre class="brush: python">
-print(words[0])
+print(words[0]) # output 'greeting'
         </pre>
     </div>
 </div>
@@ -54,12 +47,10 @@ print(words[0])
         OK then, your final solution should look like this:
         <pre class="brush: python">
 def first_word(text: str) -> str:
-    """
-        returns the first word in a given text.
-    """
-    return text.split()[0]
+    
+    words = text.split()
+    return words[0]
         </pre>
-
     </div>
 </div>
 
