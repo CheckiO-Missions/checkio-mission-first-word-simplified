@@ -12,7 +12,7 @@
         <i>OK. Maybe you can give me some doc links?</i>
     </div>
     <div class="answer">
-        Sure, if you need to split a string, you should do <b>str.split()</b>. <a href="https://docs.python.org/3.8/library/stdtypes.html#str.split">Read more about it in docs</a>.
+        Sure, if you need to split a string, you should do <b>String.split()</b>. <a href="https://www.w3schools.com/JSREF/jsref_split.asp">Read more about it in docs</a>.
     </div>
 </div>
 <div class="question-answer">
@@ -20,16 +20,16 @@
         <i>OK. How can I get the words now?</i>
     </div>
     <div class="answer">
-        Well, actually, by calling this function. Check this out:
-        <pre class="brush: python">
-text = "greeting from CheckiO Planet"
-words = text.split()
-print(words)
+        Well, actually, by calling this function with empty space argument. Check this out:
+        <pre class="brush: javascript">
+const text = "greeting from CheckiO Planet";
+const words = text.split(" ");
+console.log(words);
         </pre>
         <div class="output">
             <p>Output:</p>
             <pre>
-['greeting', 'from', 'CheckiO', 'Planet']
+'greeting', 'from', 'CheckiO', 'Planet'
             </pre>
         </div>
     </div>
@@ -39,9 +39,9 @@ print(words)
         <i>Well… How can I get the first word then?</i>
     </div>
     <div class="answer">
-        So, the result of the <b class="code">split()</b>  function is a list of words. In order to get the first one, you need to use index <b class="code">0</b> .
-        <pre class="brush: python">
-print(words[0])
+        So, the result of the <b class="code">split()</b> function is an object of words. In order to get the first one, you need to use index <b class="code">0</b>.
+        <pre class="brush: javascript">
+console.log(words[0]); 
         </pre>
         <div class="output">
             <p>Output:</p>
@@ -57,12 +57,16 @@ print(words[0])
     </div>
     <div class="answer">
         OK then, your final solution should look like this:
-        <pre class="brush: python">
-def first_word(text: str) -> str:
-    
-    words = text.split()
+        <pre class="brush: javascript">
+import assert from "assert";
 
-    return words[0]
+
+function firstWord(text: string): string {
+    
+    const words = text.split(" ");
+    
+    return words[0];
+}
         </pre>
     </div>
 </div>
