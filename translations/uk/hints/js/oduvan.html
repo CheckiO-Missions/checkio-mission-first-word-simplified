@@ -1,0 +1,77 @@
+<body data-author="oduvan">
+    <div class="question-answer">
+        <div class="question">
+            <i>Я не маю уявлення, як почати розв'язання цієї місії.</i>
+        </div>
+        <div class="answer">
+            <p>Твоя загальна стратегія тут - це розбити рядок на слова і тоді взяти перше із них.</p>
+        </div>
+    </div>
+    <div class="question-answer">
+        <div class="question">
+            <i>Зрозуміло. Може дасиш якесь посилання на відповідні матеріали?</i>
+        </div>
+        <div class="answer">
+            <p>Звісно! Якщо тобі потрібно розбити рядок, то слід використати <a target="_blank" href="https://www.w3schools.com/JSREF/jsref_split.asp">string.split()</a>.</p>
+        </div>
+    </div>
+    <div class="question-answer">
+        <div class="question">
+            <i>Добре. То як мені власне отримати ці слова?</i>
+        </div>
+        <div class="answer">
+            <p>Взагалі то, викликавши вищенаведену функцію. Ось, поглянь:</p>
+            <pre class="brush: javascript">
+const text = "greeting from CheckiO Planet";
+const words = text.split(" ");
+console.log(words);
+            </pre>
+            <div class="output">
+                <p>Вивід:</p>
+                <pre>
+'greeting', 'from', 'CheckiO', 'Planet'
+                </pre>
+            </div>
+        </div>
+    </div>
+    <div class="question-answer">
+        <div class="question">
+            <i>І як мені взяти звідси перше слово?</i>
+        </div>
+        <div class="answer">
+            <p>Отже, результатом функції <b class="code">split()</b> є масив зі слів.
+            Щоб взяти перше із них, тобі потрібно звернутися до значення із індексом <b class="code">0</b>.</p>
+            <pre class="brush: javascript">
+console.log(words[0]); 
+            </pre>
+            <div class="output">
+                <p>Вивід:</p>
+                <pre>
+    'greeting'
+                </pre>
+            </div>
+        </div>
+    </div>
+    <div class="question-answer">
+        <div class="question">
+            <i>Я все ще не розумію, як застосувати це разом.</i>
+        </div>
+        <div class="answer">
+            <p>Твій фінальний розв'язок матиме вигляд:</p>
+            <pre class="brush: javascript">
+import assert from "assert";
+
+
+function firstWord(text: string): string {
+    
+    const words = text.split(" ");
+    
+    return words[0];
+}
+            </pre>
+        </div>
+    </div>
+    
+    
+    </body>
+    

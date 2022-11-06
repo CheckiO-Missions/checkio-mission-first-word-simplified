@@ -1,55 +1,67 @@
 <body data-author="oduvan">
 <div class="question-answer">
     <div class="question">
-        Я не маю уявлення, як почати розв'язання цієї місії.
+        <i>Я не маю уявлення, як почати розв'язання цієї місії.</i>
     </div>
     <div class="answer">
-        Твоя загальна стратегія тут - це розбити рядок на слова і тоді взяти перше із них.
+        <p>Твоя загальна стратегія тут - це розбити рядок на слова і тоді взяти перше із них.</p>
     </div>
 </div>
 <div class="question-answer">
     <div class="question">
-        Зрозуміло. Може дасиш якесь посилання на відповідні матеріали?
+        <i>Зрозуміло. Може дасиш якесь посилання на відповідні матеріали?</i>
     </div>
     <div class="answer">
-        Звісно! Якщо тобі потрібно розбити рядок, то слід використати <a target="_blank" href="https://docs.python.org/3.8/library/stdtypes.html#str.split">str.split()</a>.
+        <p>Звісно! Якщо тобі потрібно розбити рядок, то слід використати <a target="_blank" href="https://docs.python.org/3.8/library/stdtypes.html#str.split">str.split()</a>.</p>
     </div>
 </div>
 <div class="question-answer">
     <div class="question">
-        Добре. То як мені власне отримати ці слова?
+        <i>Добре. То як мені власне отримати ці слова?</i>
     </div>
     <div class="answer">
-        Взагалі то, викликавши вищенаведену функцію. Ось, поглянь:
+        <p>Взагалі то, викликавши вищенаведену функцію. Ось, поглянь:</p>
         <pre class="brush: python">
 text = "greeting from CheckiO Planet"
 words = text.split()
-print(words) # output ['greeting', 'from', 'CheckiO', 'Planet']
+print(words) 
         </pre>
+        <div class="output">
+            <p>Вивід:</p>
+            <pre>
+['greeting', 'from', 'CheckiO', 'Planet']
+            </pre>
+        </div>
     </div>
 </div>
 <div class="question-answer">
     <div class="question">
-        І як мені взяти звідси перше слово?
+        <i>І як мені взяти звідси перше слово?</i>
     </div>
     <div class="answer">
-        Отже, результатом функції split() є список слів.
-        Щоб взяти перше із них, тобі потрібно звернутися до значення із індексом 0.
+        <p>Отже, результатом функції <b class="code">split()</b> є список слів. Щоб взяти перше із них, тобі потрібно звернутися до значення із індексом <b class="code">0</b>.</p>
         <pre class="brush: python">
-print(words[0]) # output 'greeting'
+print(words[0])
         </pre>
+        <div class="output">
+            <p>Вивід:</p>
+            <pre>
+'greeting'
+            </pre>
+        </div>
     </div>
 </div>
 <div class="question-answer">
     <div class="question">
-        Я все ще не розумію, як застосувати це разом.
+        <i>Я все ще не розумію, як застосувати це разом.</i>
     </div>
     <div class="answer">
-        Твій фінальний розв'язок матиме вигляд:
+        <p>Твій фінальний розв'язок матиме вигляд:</p>
         <pre class="brush: python">
 def first_word(text: str) -> str:
     
     words = text.split()
+    
     return words[0]
         </pre>
     </div>
