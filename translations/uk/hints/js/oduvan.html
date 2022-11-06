@@ -4,7 +4,7 @@
             <i>Я не маю уявлення, як почати розв'язання цієї місії.</i>
         </div>
         <div class="answer">
-            Твоя загальна стратегія тут - це розбити рядок на слова і тоді взяти перше із них.
+            <p>Твоя загальна стратегія тут - це розбити рядок на слова і тоді взяти перше із них.</p>
         </div>
     </div>
     <div class="question-answer">
@@ -12,7 +12,7 @@
             <i>Зрозуміло. Може дасиш якесь посилання на відповідні матеріали?</i>
         </div>
         <div class="answer">
-            Звісно! Якщо тобі потрібно розбити рядок, то слід використати <a href="https://www.w3schools.com/JSREF/jsref_split.asp">string.split()</a>.
+            <p>Звісно! Якщо тобі потрібно розбити рядок, то слід використати <a target="_blank" href="https://www.w3schools.com/JSREF/jsref_split.asp">string.split()</a>.</p>
         </div>
     </div>
     <div class="question-answer">
@@ -20,7 +20,7 @@
             <i>Добре. То як мені власне отримати ці слова?</i>
         </div>
         <div class="answer">
-            Взагалі то, викликавши вищенаведену функцію. Ось, поглянь:
+            <p>Взагалі то, викликавши вищенаведену функцію. Ось, поглянь:</p>
             <pre class="brush: javascript">
 const text = "greeting from CheckiO Planet";
 const words = text.split(" ");
@@ -39,9 +39,9 @@ console.log(words);
             <i>І як мені взяти звідси перше слово?</i>
         </div>
         <div class="answer">
-            Отже, результатом функції <b class="code">split()</b> є масив зі слів.
-            Щоб взяти перше із них, тобі потрібно звернутися до значення із індексом <b class="code">0</b>.
-            <pre class="brush: python">
+            <p>Отже, результатом функції <b class="code">split()</b> є масив зі слів.
+            Щоб взяти перше із них, тобі потрібно звернутися до значення із індексом <b class="code">0</b>.</p>
+            <pre class="brush: javascript">
 console.log(words[0]); 
             </pre>
             <div class="output">
@@ -57,8 +57,8 @@ console.log(words[0]);
             <i>Я все ще не розумію, як застосувати це разом.</i>
         </div>
         <div class="answer">
-            Твій фінальний розв'язок матиме вигляд:
-            <pre class="brush: python">
+            <p>Твій фінальний розв'язок матиме вигляд:</p>
+            <pre class="brush: javascript">
 import assert from "assert";
 
 
