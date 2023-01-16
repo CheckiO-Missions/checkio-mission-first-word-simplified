@@ -26,12 +26,12 @@ TESTS = {
             "input": ["hi"],
             "answer": "hi",
             "explanation": "text consists of only one word"
-        }
+        },
     ],
     "Extra": [
         {
             "input": ["Holy Edison"],
             "answer": "Holy"
-        }
+        },
     ]
 }
