@@ -1,0 +1,70 @@
+<body data-author="oduvan">
+<div class="question-answer">
+    <div class="question">
+        <p>Je ne sais pas du tout comment commencer à résoudre cette mission.</p>
+    </div>
+    <div class="answer">
+        <p>Votre stratégie générale consiste à diviser la chaîne en mots et à obtenir le premier d'entre eux.</p>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        <p>D'ACCORD. Peut-être pouvez-vous me donner des liens vers des documents?</p>
+    </div>
+    <div class="answer">
+        <p>Bien sûr, si vous devez diviser une chaîne de caractères, vous devez faire <a target="_blank" href="https://www.w3schools.com/JSREF/jsref_split.asp">string.split()</a>.</p>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        <p>OK. Comment puis-je obtenir les mots maintenant?</p>
+    </div>
+    <div class="answer">
+        <p>En fait, en appelant cette fonction avec un espace vide comme argument. Regardez ça:</p>
+        <pre class="brush: javascript">
+const text = "greeting from CheckiO Planet";
+const words = text.split(" ");
+console.log(words);
+        </pre>
+        <div class="output">
+            <p>Sortie:</p>
+            <pre>
+'greeting', 'from', 'CheckiO', 'Planet'</pre>
+        </div>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        <p>Bien... Comment puis-je obtenir le premier mot alors?</p>
+    </div>
+    <div class="answer">
+        <p>Le résultat de la fonction <b class="code">split()</b> est un tableau de mots. Pour obtenir le premier mot, vous devez utiliser l'index <b class="code">0</b>.</p>
+        <pre class="brush: javascript">
+console.log(words[0]); 
+        </pre>
+        <div class="output">
+            <p>Résultat:</p>
+            <pre>
+'greeting'</pre>
+        </div>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        <p>Je n'ai toujours aucune idée de la manière dont tout cela s'articule.</p>
+    </div>
+    <div class="answer">
+        <p>OK, votre solution finale devrait ressembler à ceci:</p>
+        <div class="spoiler">
+        <pre class="brush: javascript">
+function firstWord(text: string): string {
+    
+    const words = text.split(" ");
+    
+    return words[0];
+}
+        </pre>
+        </div>
+    </div>
+</div>
+</body>

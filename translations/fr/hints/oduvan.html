@@ -1,0 +1,69 @@
+<body data-author="oduvan">
+<div class="question-answer">
+    <div class="question">
+        <p>Je ne sais pas du tout comment commencer à résoudre cette mission.</p>
+    </div>
+    <div class="answer">
+        <p>Votre stratégie générale consiste à diviser la chaîne en mots et à obtenir le premier d'entre eux.</p>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        <p>D'ACCORD. Peut-être pouvez-vous me donner des liens vers des documents?</p>
+    </div>
+    <div class="answer">
+        <p>Bien sûr, si vous devez diviser une chaîne de caractères, vous devez faire <a target="_blank" href="https://docs.python.org/3.8/library/stdtypes.html#str.split">str.split()</a>.</p>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        <p>OK. Comment puis-je obtenir les mots maintenant?</p>
+    </div>
+    <div class="answer">
+        <p>En fait, en appelant cette fonction. Regardez ça:</p>
+        <pre class="brush: python">
+text = "greeting from CheckiO Planet"
+words = text.split()
+print(words)
+        </pre>
+        <div class="output">
+            <p>Output:</p>
+            <pre>
+['greeting', 'from', 'CheckiO', 'Planet']</pre>
+        </div>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        <p>Bien... Comment puis-je obtenir le premier mot alors?</p>
+    </div>
+    <div class="answer">
+        <p>Le résultat de la fonction <b class="code">split()</b> est une liste de mots. Pour obtenir le premier mot, vous devez utiliser l'index <b class="code">0</b>.</p>
+        <pre class="brush: python">
+print(words[0])
+        </pre>
+        <div class="output">
+            <p>Résultat:</p>
+            <pre>
+'greeting'</pre>
+        </div>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        <p>Je n'ai toujours aucune idée de la façon de mettre tout cela ensemble.</p>
+    </div>
+    <div class="answer">
+        <p>OK, votre solution finale devrait ressembler à ceci:</p>
+        <div class="spoiler">
+        <pre class="brush: python">
+def first_word(text: str) -> str:
+    
+    words = text.split()
+
+    return words[0]
+        </pre>
+        </div>
+    </div>
+</div>
+</body>
