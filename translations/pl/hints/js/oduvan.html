@@ -12,7 +12,7 @@
         <p>OK. Może poda mi Pan jakieś linki do dokumentów?</p>
     </div>
     <div class="answer">
-        <p>Oczywiście, jeśli musi Pan podzielić ciąg znaków, powinien Pan to zrobić <a target="_blank" href="https://docs.python.org/3.8/library/stdtypes.html#str.split">str.split()</a>.</p>
+        <p>Oczywiście, jeśli musi Pan podzielić ciąg znaków, powinien Pan to zrobić <a target="_blank" href="https://www.w3schools.com/JSREF/jsref_split.asp">string.split()</a>.</p>
     </div>
 </div>
 <div class="question-answer">
@@ -20,16 +20,16 @@
         <p>OK. Jak mogę teraz uzyskać słowa?</p>
     </div>
     <div class="answer">
-        <p>Cóż, właściwie, wywołując tę funkcję. Proszę to sprawdzić:</p>
-        <pre class="brush: python">
-text = "greeting from CheckiO Planet"
-words = text.split()
-print(words)
+        <p>Cóż, w rzeczywistości, wywołując tę funkcję z pustym argumentem spacji. Proszę to sprawdzić:</p>
+        <pre class="brush: javascript">
+const text = "greeting from CheckiO Planet";
+const words = text.split(" ");
+console.log(words);
         </pre>
         <div class="output">
             <p>Output:</p>
             <pre>
-['greeting', 'from', 'CheckiO', 'Planet']</pre>
+'greeting', 'from', 'CheckiO', 'Planet'</pre>
         </div>
     </div>
 </div>
@@ -38,9 +38,9 @@ print(words)
         <p>Cóż... Jak zatem mogę uzyskać pierwsze słowo?</p>
     </div>
     <div class="answer">
-        <p>Wynikiem funkcji <b class="code">split()</b> jest lista słów. Aby uzyskać pierwsze z nich, należy użyć indeksu <b class="code">0</b>.</p>
-        <pre class="brush: python">
-print(words[0])
+        <p>Wynikiem funkcji <b class="code">split()</b> jest tablica słów. Aby uzyskać pierwsze z nich, należy użyć indeksu <b class="code">0</b>.</p>
+        <pre class="brush: javascript">
+console.log(words[0]); 
         </pre>
         <div class="output">
             <p>Wynik:</p>
@@ -56,12 +56,13 @@ print(words[0])
     <div class="answer">
         <p>W takim razie ostateczne rozwiązanie powinno wyglądać następująco:</p>
         <div class="spoiler">
-        <pre class="brush: python">
-def first_word(text: str) -> str:
+        <pre class="brush: javascript">
+function firstWord(text: string): string {
     
-    words = text.split()
-
-    return words[0]
+    const words = text.split(" ");
+    
+    return words[0];
+}
         </pre>
         </div>
     </div>

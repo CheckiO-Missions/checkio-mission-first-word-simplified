@@ -1,43 +1,42 @@
 <!-- Describe task in general -->
 
 <p>
-    Twoim zadaniem jest znalezienie pierwszego słowa w danym ciągu znaków (stringu).
+    Otrzymują Państwo ciąg znaków i muszą znaleźć jego pierwsze słowo.
 </p>
 
 <ul>
-    <li>String składa się wyłącznie z liter angielskiego alfabetu i spacji.</li>
-    <li>Spacje nie występują ani na początku, ani na końcu ciągu znaków.</li>
+    <li>Ciąg wejściowy składa się tylko z angielskich liter i spacji.</li>
+    <li>Na początku i na końcu ciągu nie ma żadnych spacji.</li>
 </ul>
 
 <!-- Explain input and output values -->
 <p>
-    <strong>Wejście: </strong> String.
+   <strong>Dane wejściowe:</strong> A {% if is_js %}string{% else %} string <span>(str)</span>{% endif %}.
 </p>
 
 <p>
-    <strong>Wyjście: </strong> String. 
+   <strong>Dane wyjściowe:</strong> A {% if is_js %}ciąg <span>(string)</span>{% else %} ciąg <span>(str)</span>{% endif %}. 
 </p>
 
 
 <!-- Put some usage examples -->
 <div class="for_info_only">
     <p>
-        <strong>Przykład:</strong>
+        <strong>Przykłady:</strong>
     </p>
 
 <pre class="brush: {% if is_js %}javascript{% else %}python{% endif %}">{{init_code_tmpl}}</pre>
-
 </div>
 <!-- Here you can explain how it can be used in development. -->
 <!-- The section is optional -->
 <p class="for_info_only">
-    <strong>Do czego jest używane: </strong>
-    <i>W wierszu poleceń pierwsze słowo jest komendą.</i>
+    <strong>Sposób użycia: </strong>
+    <i>Pierwsze słowo jest poleceniem w wierszu poleceń.</i>
 </p>
 
 <!-- Here you can explain some constraints for input-->
 <!-- The section is optional -->
 <p>
     <strong>Warunek wstępny:</strong>
-    <i>Tekst zawiera litery a-z, A-Z oraz spacje.</i>
+    <i>Tekst może zawierać litery a-z, A-Z i spacje.</i>
 </p>
