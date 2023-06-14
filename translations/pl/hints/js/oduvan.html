@@ -1,0 +1,70 @@
+<body data-author="oduvan">
+<div class="question-answer">
+    <div class="question">
+        <p>Nie mam pojęcia, jak zacząć rozwiązywać tę misję.</p>
+    </div>
+    <div class="answer">
+        <p>Pana ogólna strategia powinna polegać na podzieleniu ciągu na słowa, a następnie zdobyciu pierwszego z nich.</p>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        <p>OK. Może poda mi Pan jakieś linki do dokumentów?</p>
+    </div>
+    <div class="answer">
+        <p>Oczywiście, jeśli musi Pan podzielić ciąg znaków, powinien Pan to zrobić <a target="_blank" href="https://www.w3schools.com/JSREF/jsref_split.asp">string.split()</a>.</p>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        <p>OK. Jak mogę teraz uzyskać słowa?</p>
+    </div>
+    <div class="answer">
+        <p>Cóż, w rzeczywistości, wywołując tę funkcję z pustym argumentem spacji. Proszę to sprawdzić:</p>
+        <pre class="brush: javascript">
+const text = "greeting from CheckiO Planet";
+const words = text.split(" ");
+console.log(words);
+        </pre>
+        <div class="output">
+            <p>Output:</p>
+            <pre>
+'greeting', 'from', 'CheckiO', 'Planet'</pre>
+        </div>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        <p>Cóż... Jak zatem mogę uzyskać pierwsze słowo?</p>
+    </div>
+    <div class="answer">
+        <p>Wynikiem funkcji <b class="code">split()</b> jest tablica słów. Aby uzyskać pierwsze z nich, należy użyć indeksu <b class="code">0</b>.</p>
+        <pre class="brush: javascript">
+console.log(words[0]); 
+        </pre>
+        <div class="output">
+            <p>Wynik:</p>
+            <pre>
+'greeting'</pre>
+        </div>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        <p>Nadal nie mam pojęcia, jak to wszystko połączyć.</p>
+    </div>
+    <div class="answer">
+        <p>W takim razie ostateczne rozwiązanie powinno wyglądać następująco:</p>
+        <div class="spoiler">
+        <pre class="brush: javascript">
+function firstWord(text: string): string {
+    
+    const words = text.split(" ");
+    
+    return words[0];
+}
+        </pre>
+        </div>
+    </div>
+</div>
+</body>
