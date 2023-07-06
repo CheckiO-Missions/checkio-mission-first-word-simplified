@@ -1,0 +1,70 @@
+<body data-author="oduvan">
+<div class="question-answer">
+    <div class="question">
+        <p>我不知道如何开始解决这个任务。</p>
+    </div>
+    <div class="answer">
+        <p>你在这里的一般策略应该是将字符串分成单词，然后得到第一个单词。</p>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        <p>好的。也许你可以给我一些文档链接？</p>
+    </div>
+    <div class="answer">
+        <p>当然，如果你需要分割一个字符串，你应该做<a target="_blank" href="https://www.w3schools.com/JSREF/jsref_split.asp">string.split()</a> 。</p>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        <p>好的。我现在怎么能得到这些词呢？</p>
+    </div>
+    <div class="answer">
+        <p>嗯，实际上，通过调用这个带有空位参数的函数。看看这个吧：</p>
+        <pre class="brush: javascript">
+const text = "greeting from CheckiO Planet";
+const words = text.split(" ");
+console.log(words);
+        </pre>
+        <div class="output">
+            <p>输出：</p>
+            <pre>
+'greeting', 'from', 'CheckiO', 'Planet'</pre>
+        </div>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        <p>那么......我怎样才能得到第一个词呢？</p>
+    </div>
+    <div class="answer">
+        <p>所以，<b class="code">split()</b> 函数的结果是一个单词数组。为了得到第一个词，你需要使用索引<b class="code">0</b> 。</p>
+        <pre class="brush: javascript">
+console.log(words[0]); 
+        </pre>
+        <div class="output">
+            <p>输出：</p>
+            <pre>
+'greeting'</pre>
+        </div>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        <p>我还是不知道如何把这些东西放在一起。</p>
+    </div>
+    <div class="answer">
+        <p>好吧，你的最终解决方案应该是这样的：</p>
+        <div class="spoiler">
+        <pre class="brush: javascript">
+function firstWord(text: string): string {
+    
+    const words = text.split(" ");
+    
+    return words[0];
+}
+        </pre>
+        </div>
+    </div>
+</div>
+</body>
