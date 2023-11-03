@@ -1,0 +1,42 @@
+<!-- Describe task in general -->
+<img src="{{MEDIA_CONVERT}}title.png" class="title_img" />
+<p>
+    Sie erhalten eine Zeichenkette und müssen deren erstes Wort finden.
+</p>
+
+<ul>
+    <li>Die Eingabezeichenfolge besteht nur aus englischen Buchstaben und Leerzeichen.</li>
+    <li>Am Anfang und am Ende der Zeichenkette gibt es keine Leerzeichen.</li>
+</ul>
+
+<!-- Explain input and output values -->
+<p>
+   <strong>Eingabe:</strong> A {% if is_js %}string{% else %} string <span>(str)</span>{% endif %}.
+</p>
+
+<p>
+   <strong>Ausgabe:</strong> A {% if is_js %}string{% else %} string <span>(str)</span>{% endif %}. 
+</p>
+
+
+<!-- Put some usage examples -->
+<div class="for_info_only">
+    <p>
+        <strong>Beispiele:</strong>
+    </p>
+
+<pre class="brush: {% if is_js %}javascript{% else %}python{% endif %}">{{init_code_tmpl}}</pre>
+</div>
+<!-- Here you can explain how it can be used in development. -->
+<!-- The section is optional -->
+<p class="for_info_only">
+    <strong>Wie es verwendet wird: </strong>
+    <i>Das erste Wort ist ein Befehl in einer Befehlszeile.</i>
+</p>
+
+<!-- Here you can explain some constraints for input-->
+<!-- The section is optional -->
+<p>
+    <strong>Vorbedingung:</strong>
+    <i>Der Text kann a-z, A-Z und Leerzeichen enthalten.</i>
+</p>
